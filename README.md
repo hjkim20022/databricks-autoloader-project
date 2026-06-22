@@ -89,8 +89,8 @@ The final Gold table shows the total revenue by product category calculated from
 ### GitHub Actions CI/CD
 
 A GitHub Actions workflow was implemented to automatically validate repository changes whenever code is pushed to the main branch.
-
-This demonstrates basic CI/CD practices commonly used in Data Engineering projects.
+The workflow runs on GitHub-hosted runners and performs repository validation as part of a CI/CD process.
+This demonstrates automation and DevOps practices commonly used in modern Data Engineering projects.
 
 ![GitHub Actions Success](screenshots/08_github_actions_success.png)
 
