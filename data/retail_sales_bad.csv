@@ -1,0 +1,2 @@
+order_id,order_date,customer_id,product,category,quantity,unit_price
+1011,2026-05-07,C010,Phone,Electronics,,700
