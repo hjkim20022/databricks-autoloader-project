@@ -65,3 +65,9 @@ CSV files → Auto Loader → Bronze Delta Table → Silver Delta Table → Gold
 After adding a new file (`retail_sales_03.csv`) to the source data, Auto Loader automatically detected and processed the new records without reprocessing existing data.
 
 ![Incremental Ingestion](screenshots/05_incremental_ingestion.png)
+
+### Data Quality Test
+
+A test file with a missing `quantity` value was ingested. Auto Loader successfully loaded the record into the Bronze table and stored the missing value as `null`, showing that the pipeline can handle incomplete source data without failing.
+
+![Data Quality Test](screenshots/06_data_quality_test.png)
