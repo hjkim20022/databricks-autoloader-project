@@ -71,3 +71,18 @@ After adding a new file (`retail_sales_03.csv`) to the source data, Auto Loader 
 A test file with a missing `quantity` value was ingested. Auto Loader successfully loaded the record into the Bronze table and stored the missing value as `null`, showing that the pipeline can handle incomplete source data without failing.
 
 ![Data Quality Test](screenshots/06_data_quality_test.png)
+
+### Gold Layer After Data Quality Validation
+
+After introducing a test record with a missing `quantity` value, the Silver layer applied data quality rules and filtered out incomplete records. The Gold layer was then regenerated using only clean Silver data.
+
+This demonstrates the Medallion Architecture principle:
+
+* **Bronze Layer:** Stores raw data, including incomplete records.
+* **Silver Layer:** Applies data quality validation and business transformations.
+* **Gold Layer:** Produces trusted business aggregates for reporting and analytics.
+
+The final Gold table shows the total revenue by product category calculated from validated Silver data.
+
+![Gold Layer After Data Quality Validation](screenshots/07_gold_after_data_quality.png)
+
