@@ -25,3 +25,23 @@ CSV Files → Auto Loader → Bronze Delta Table → Silver Curated Table → Go
 - GitHub
 - GitHub Actions
 - Databricks Workflows
+
+## Project Implementation
+
+This project implements an end-to-end Databricks Auto Loader pipeline using Medallion Architecture.
+
+### Pipeline Flow
+
+CSV files → Auto Loader → Bronze Delta Table → Silver Delta Table → Gold Delta Table
+
+### Completed Features
+
+- Created Unity Catalog: `autoloader_catalog`
+- Created schema: `retail_streaming`
+- Created managed volumes: `raw_data` and `checkpoints`
+- Uploaded incremental CSV files: `retail_sales_01.csv` and `retail_sales_02.csv`
+- Implemented Bronze Auto Loader ingestion
+- Implemented checkpointing and schema tracking
+- Created Silver transformation with revenue calculation
+- Created Gold aggregation by category
+- Orchestrated pipeline using Databricks Workflows
