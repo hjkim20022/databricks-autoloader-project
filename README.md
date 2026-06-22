@@ -45,3 +45,17 @@ CSV files → Auto Loader → Bronze Delta Table → Silver Delta Table → Gold
 - Created Silver transformation with revenue calculation
 - Created Gold aggregation by category
 - Orchestrated pipeline using Databricks Workflows
+
+## Project Screenshots
+
+### Catalog and Tables
+![Catalog](screenshots/01_catalog_tables.png)
+
+### Raw Data Volume
+![Raw Data](screenshots/02_raw_data_files.png)
+
+### Bronze Table
+![Bronze Table](screenshots/03_bronze_table.png)
+
+### Workflow Success
+![Workflow](screenshots/04_workflow_success.png)
