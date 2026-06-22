@@ -86,3 +86,11 @@ The final Gold table shows the total revenue by product category calculated from
 
 ![Gold Layer After Data Quality Validation](screenshots/07_gold_after_data_quality.png)
 
+### GitHub Actions CI/CD
+
+A GitHub Actions workflow was implemented to automatically validate repository changes whenever code is pushed to the main branch.
+
+This demonstrates basic CI/CD practices commonly used in Data Engineering projects.
+
+![GitHub Actions Success](screenshots/08_github_actions_success.png)
+
