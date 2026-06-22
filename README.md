@@ -62,6 +62,6 @@ CSV files → Auto Loader → Bronze Delta Table → Silver Delta Table → Gold
 
 ### Incremental Ingestion Test
 
-Auto Loader automatically detected and ingested a newly added CSV file (retail_sales_03.csv) without modifying the pipeline.
+After adding a new file (`retail_sales_03.csv`) to the source data, Auto Loader automatically detected and processed the new records without reprocessing existing data.
 
 ![Incremental Ingestion](screenshots/05_incremental_ingestion.png)
