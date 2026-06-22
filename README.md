@@ -59,3 +59,9 @@ CSV files → Auto Loader → Bronze Delta Table → Silver Delta Table → Gold
 
 ### Workflow Success
 ![Workflow](screenshots/04_workflow_success.png)
+
+### Incremental Ingestion Test
+
+Auto Loader automatically detected and ingested a newly added CSV file (retail_sales_03.csv) without modifying the pipeline.
+
+![Incremental Ingestion](screenshots/05_incremental_ingestion.png)
