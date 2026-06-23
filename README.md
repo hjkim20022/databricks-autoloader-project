@@ -66,11 +66,13 @@ After adding a new file (`retail_sales_03.csv`) to the source data, Auto Loader 
 
 ![Incremental Ingestion](screenshots/05_incremental_ingestion.png)
 
-### Data Quality Test
+### Data Quality Validation
 
-A test file with a missing `quantity` value was ingested. Auto Loader successfully loaded the record into the Bronze table and stored the missing value as `null`, showing that the pipeline can handle incomplete source data without failing.
+A Data Quality notebook was implemented to validate Bronze-layer data before downstream processing.
 
-![Data Quality Test](screenshots/06_data_quality_test.png)
+The validation checks total record count and identifies records with missing `quantity` values.
+
+![Data Quality Validation](screenshots/06_data_quality_validation.png)
 
 ### Gold Layer After Data Quality Validation
 
