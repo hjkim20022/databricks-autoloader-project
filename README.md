@@ -116,3 +116,10 @@ This strengthens the project by showing automated testing practices commonly use
 GitHub Actions successfully ran the CI workflow after adding pytest unit tests for revenue calculation.
 
 ![Unit Test Success](screenshots/09_unit_tests_success.png)
+
+
+### Schema Evolution
+
+Auto Loader schema evolution was tested by adding a new column called `discount` in a later CSV file. The Bronze Delta table automatically updated to include the new column while keeping previous records as `null`.
+
+![Schema Evolution](screenshots/10_schema_evolution_discount.png)
