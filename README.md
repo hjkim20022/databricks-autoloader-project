@@ -94,3 +94,23 @@ This demonstrates automation and DevOps practices commonly used in modern Data E
 
 ![GitHub Actions Success](screenshots/08_github_actions_success.png)
 
+### Automated Unit Testing
+
+Pytest unit tests were added to validate the revenue calculation logic used in the Silver transformation layer.
+
+The tests verify that:
+
+- Quantity × unit price returns the correct revenue
+- Decimal unit prices are handled correctly
+- Core business logic is validated before pipeline changes are accepted
+
+This strengthens the project by showing automated testing practices commonly used in Data Engineering workflows.
+
+- Added pytest unit tests for Silver-layer revenue calculation
+- Integrated GitHub Actions CI to validate repository changes
+
+### Unit Test Success
+
+GitHub Actions successfully ran the CI workflow after adding pytest unit tests for revenue calculation.
+
+![Unit Test Success](screenshots/09_unit_tests_success.png)
